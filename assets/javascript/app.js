@@ -7,24 +7,20 @@ var correct = 0;
 var wrong = 0;
 var noAnswer= 0;
 
+//for the timer
 var count= 15;
-
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
-
+var counter=setInterval(timer, 1000);
+//timer function
 function timer()
 {
   count=count-1;
   if (count <= 0)
   {
      clearInterval(counter);
-     //counter ended, do something here
      return;
   }
-
   document.getElementById("timer").innerHTML="You have "+count + " seconds to finish.";
-  //Do code for showing the number of seconds here
 }
-
 //set value to click functions
 for (var i=0, len=q1.length; i<len; i++) {
     q1[i].onclick = function() { 
@@ -39,13 +35,11 @@ for (var i=0, len=q3.length; i<len; i++) {
     q3[i].onclick = function() { 
     }
 };
-
 //set timeout
 setTimeout(timeUp, 1000 * 15);
-
 //time up screen
 function timeUp() {
-//score each question
+//scores each question
 	if (parseInt(q1.value) === 1) {
 	correct++;
 	} else if (parseInt(q1.value) === 0) {
@@ -69,7 +63,7 @@ function timeUp() {
 	} else {
 	noAnswer++
 	};
-//ddisplay results
+//display results
 	$("#timer").text("Time's up, fool");
 	$("#correctKey").text("Correct: "+correct);
 	$("#wrong").text("Wrong: "+wrong);

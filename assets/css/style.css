@@ -5,7 +5,11 @@ body{
 }
 h1{
   font-size:72px;
- font-family: 'Sigmar One', cursive;
+  font-family: 'Sigmar One', cursive;
   padding:30px;
   color: #FF69B4;
+}
+#timer{
+	font-family: 'Sigmar One', sans-serif;
+	color: mediumspringgreen;
 }
