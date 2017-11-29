@@ -12,113 +12,79 @@
 		Trivia Title
 	</div>
 	<!-- Timer -->
-	<div id="timer">
-	</div>
-	<div id="correct"></div>
+	<div id="timer"></div>
+	<div id="correctKey"></div>
 	<div id="wrong"></div>
 	<div id="unanswered"></div>
-	<div id="container">
-	<!-- question 1 -->
+	<div class="question" id="questionOne">
+		<p > Question 1? </p>
+			<div class="form-check">
+				<div class="radio">
+				      <label><input type="radio" class="correct" name="optradio">Option 1</label>
+				</div>
+				<div class="radio">
+				      <label><input type="radio" class="wrong" name="optradio">Option 2</label>
+				</div>
+				<div class="radio">
+				      <label><input type="radio" name="optradio">Option 3</label>
+				</div>
+				<div class="radio">
+				      <label><input type="radio" name="optradio">Option 4</label>
+				</div>
+			</div>
+	</div>
+	<div class="question">
+		<p> Question 2? </p>
+		<div class="form-check">
+			<div class="radio">
+			      <label><input type="radio" class="correct" value="1" >Option 1</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" >Option 2</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" >Option 3</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" >Option 4</label>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="question">
+		<p> Question 3? </p>	
+		<div class="form-check">
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 1</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 2</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 3</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 4</label>
+			</div>
+		</div>
+	</div>
 
-		<div id="question1">
-			<p class="question"> Question 1? </p>
-			<div class="form-check">
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 1
-			  </label>
-			  <label class="correct form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 2
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 3
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 4
-			  </label>
+	<div class="question">
+		<p> Question 4? </p>
+		<div class="form-check">
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 1</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 2</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 3</label>
+			</div>
+			<div class="radio">
+			      <label><input type="radio" name="optradio">Option 4</label>
 			</div>
 		</div>
-	<!-- 
-		<div>
-			<p class="question"> Question 2? </p>
-			<div class="form-check">
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 1
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 2
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 3
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 4
-			  </label>
-			</div>
-		</div>
-
-		<div>
-			<p class="question"> Question 3? </p>
-			<div class="form-check">
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 1
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 2
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 3
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 4
-			  </label>
-			</div>
-		</div>
-
-		<div>
-			<p class="question"> Question 4? </p>
-			<div class="form-check">
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 1
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 2
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 3
-			  </label>
-			  <label class="form-check-label">
-			    <input class="answer form-check-input" type="checkbox" value="">
-			    Option 4
-			  </label>
-			</div>
-		</div> -->
-	<!-- 	<div>
-			<p> Question 2? </p>
-		</div>
-		<div>
-			<p> Question 3? </p>
-		</div>
-		<div>
-			<p> Question 4? </p>
-		</div>
-		<div>
-			<p> Question 5? </p>
-		</div> -->
+	</div> -->
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/javascript/app.js"></script>
