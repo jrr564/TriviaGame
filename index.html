@@ -5,86 +5,40 @@
 	<meta charset="UTF-8">
 	<title>Trivia Game</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<div class="page-header">
-		Trivia Title
+	<header class="navbar">
+		<h1>MUSIC TRIVIA</h1>
 	</div>
 	<!-- Timer -->
-	<div id="timer"></div>
-	<div id="correctKey"></div>
-	<div id="wrong"></div>
-	<div id="unanswered"></div>
-	<div class="question" id="questionOne">
-		<p > Question 1? </p>
-			<div class="form-check">
-				<div class="radio">
-				      <label><input type="radio" class="correct" name="optradio">Option 1</label>
-				</div>
-				<div class="radio">
-				      <label><input type="radio" class="wrong" name="optradio">Option 2</label>
-				</div>
-				<div class="radio">
-				      <label><input type="radio" name="optradio">Option 3</label>
-				</div>
-				<div class="radio">
-				      <label><input type="radio" name="optradio">Option 4</label>
-				</div>
-			</div>
+	<div class="panel">
+		<h2 id="timer"></h2>
+		<h2 id="correctKey"></h2>
+		<h2 id="wrong"></h2>
+		<h2 id="unanswered"></h2>
 	</div>
-	<div class="question">
-		<p> Question 2? </p>
-		<div class="form-check">
-			<div class="radio">
-			      <label><input type="radio" class="correct" value="1" >Option 1</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" >Option 2</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" >Option 3</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" >Option 4</label>
-			</div>
-		</div>
-	</div>
-	<!-- <div class="question">
-		<p> Question 3? </p>	
-		<div class="form-check">
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 1</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 2</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 3</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 4</label>
-			</div>
-		</div>
-	</div>
-
-	<div class="question">
-		<p> Question 4? </p>
-		<div class="form-check">
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 1</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 2</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 3</label>
-			</div>
-			<div class="radio">
-			      <label><input type="radio" name="optradio">Option 4</label>
-			</div>
-		</div>
-	</div> -->
+	<form id="Questions">
+	    <fieldset>
+	    <div class="col-md-6 col-lg-12">
+		    <h2>What will Meatloaf do for love?&nbsp;</h2>
+		        <label><input type="radio" name="questionOne" value="0" /> That.</label>
+		        <label><input type="radio" name="questionOne" value="1" /> Anything but that.</label>
+	 	</div>
+	    <div class="col-md-6 col-lg-12">
+		    <h2>Who let the dogs out?&nbsp;</h2>
+		        <label><input type="radio" name="questionTwo" value="0" /> The Baha Men (It was an inside job.)</label>
+		        <label><input type="radio" name="questionTwo" value="1" /> Some jerk.</label>
+	    </div>
+	    <div class="col-md-6 col-lg-12">
+	     <h2>What is Justin Timberlake bringing back?&nbsp;</h2>
+	        <label><input type="radio" name="questionThree" value="0" /> *NSYNC</label>
+	        <label><input type="radio" name="questionThree" value="1" /> Sexy</label>
+	        <label><input type="radio" name="questionThree" value="0" /> Frosted Tips</label>
+	    </div>
+	    </fieldset>
+	</form>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/javascript/app.js"></script>

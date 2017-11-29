@@ -1,0 +1,11 @@
+body{
+  text-align:center;
+  background:#dfdfdf;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+h1{
+  font-size:72px;
+ font-family: 'Sigmar One', cursive;
+  padding:30px;
+  color: #FF69B4;
+}
